@@ -11,8 +11,24 @@ export default function Home() {
 
 <h1 className="title">Let's bring them home</h1>
 <h1 className="description">text</h1>
-<a className="button 
+<a className="button data-name="color" data-value="blue">
+<h1 className="button__text">
 </a>
+</div>
+
+<div className="home__events">
+<div className="home__event-wrapper>
+JavaScript to check database and return info as tag (like react components)
+</div>
+</div>
+
+<div className=home__main">
+<div className="home__main-group">
+<Image className="home__main-img" scr={live_thumbnail}/>
+<div className="home__main-info">
+
+</div>
+
       <h1 className="title">Home</h1>
       <Link href="/about"></Link>
     </main>
