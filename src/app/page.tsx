@@ -1,3 +1,4 @@
+import live-thumbnail from '../../public/img'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
@@ -24,7 +25,7 @@ JavaScript to check database and return info as tag (like react components)
 
 <div className=home__main">
 <div className="home__main-group">
-<Image className="home__main-img" scr={live_thumbnail}/>
+<Image className="home__main-img" scr={live-thumbnail}/>
 <div className="home__main-info">
 
 </div>
