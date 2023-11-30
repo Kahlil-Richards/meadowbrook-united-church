@@ -24,7 +24,7 @@ export default function About() {
                 <div className="about__description">
                     <Image src={about2} alt="About Church image" className="about__img-description" />
                     <h1 className="description">
-                        On September 13, 1959 twenty-five members of the Presbyterian faith met for divine worship in the Assembly Hall of Meadowbrook High School and set the stage for a dynamic local mission – the Meadowbrook Presbyterian Church.
+                        AREA COUNCIL – Each local congregation is a member of one of the 4 regional Councils in the United Church, which has oversight on the work and witness of the church within specified geographical boundaries.  Ministers operate under the discipline of the regional councils. SYNOD AND MODERATOR – The Synod is the supreme legislative and administrative court of the church and meets once every two years.  The business of the Synod is presided over by a moderator who is elected by the Councils.  Synod administers its affairs through the Synod Administrative Centre, along with its standing committees. MUC is located in the heart of the Meadowbrook/Havendale community and share space, spirit and resources with the Meadowbrook Prep and High Schools, two main entities that are a part of our wholistic community engagement.
                     </h1>
                 </div>
             </div>
