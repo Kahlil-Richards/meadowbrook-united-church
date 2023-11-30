@@ -1,4 +1,5 @@
 import live_thumbnail from '../../public/img/live-thumbnail.jpg'
+import map from '../../public/img/live-thumbnail.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
@@ -43,7 +44,33 @@ export default function Home() {
           </div>
           <h1 className="title">Home</h1>
         </div>
+        <div className="home__info-group">
+          <div className="home__map">
+            <h1 className="subtitle">Map</h1>
+            <Image src={map} alt="map"></Image>
+            <h1 className="description">
+              2 Flemington Drive
+              Kingston 19
+              Jamaica</h1>
+          </div>
+          <div className="home__contact">
+            <h1 className="subtitle">Contact Us</h1>
+            <h1 className="description">
+              Phone: 1-(876)-969-6918
+              Fax: 1-(876)-925-8202
+              Email: home@meadunited.org
+              Office Hours: (MON-FRI) 9:00 AM - 5:00PM
+            </h1>
+          </div>
+          <div className="home__newsletter">
+            <h1 className="subtitle">Newsletter</h1>
+            <h1 className="description">
+              subscribe to be updated
+            </h1>
+            <h1 className="description">Email: <input type=''></input></h1>
+          </div>
+        </div>
       </div>
-    </main>
+    </main >
   )
 }
