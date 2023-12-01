@@ -1,11 +1,11 @@
 import './about.css'
 import Image from 'next/image'
-import about from '../../../public/img/about.png'
-import about__description from '../../../public/img/about.png'
-import about2 from '../../../public/img/about2.jpg'
-import webster from '../../../public/img/webster.jpg'
-import council from '../../../public/img/council.jpg'
-import wood from '../../../public/img/wood.jpeg'
+import about from '../../public/img/about.png'
+import about__description from '../../public/img/about.png'
+import about2 from '../../public/img/about2.jpg'
+import webster from '../../public/img/webster.jpg'
+import council from '../../public/img/council.jpg'
+import wood from '../../public/img/wood.jpeg'
 
 export default function About() {
     return (
