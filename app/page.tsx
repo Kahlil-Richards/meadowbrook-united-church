@@ -13,7 +13,7 @@ export default function Home() {
           <path d="M8.66667 57H52V51.3H8.70133C7.36667 51.2658 5.77778 50.7442 5.77778 48.45C5.77778 46.1558 7.36667 45.6342 8.70133 45.6H52V5.7C52 4.18827 51.3913 2.73845 50.3077 1.66949C49.2242 0.600534 47.7546 0 46.2222 0H8.66667C5.18267 0 0 2.27715 0 8.55V48.45C0 54.7228 5.18267 57 8.66667 57ZM14.4444 14.25H23.1111V8.55H28.8889V14.25H37.5556V19.95H28.8889V37.05H23.1111V19.95H14.4444V14.25Z" fill="black" />
         </svg>
 
-        <h1 className="title">Lets bring them home</h1>
+        <h1 className="title">Lets bring them home.</h1>
         <h1 className="description">To live out Gods purpose for salvation by reflecting the unconditional love of God through dynamic Christian worship, mutual care & support, active community engagement and proactive servant leadership, working towards peace and harmony in community”.</h1>
         <a className="button" data-name="color" data-value="blue">
           <h1 className="button__text"></h1>
