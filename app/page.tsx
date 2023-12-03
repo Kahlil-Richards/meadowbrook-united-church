@@ -51,7 +51,8 @@ export default function Home() {
             <h1 className="description">
               2 Flemington Drive
               Kingston 19
-              Jamaica</h1>
+              Jamaica
+            </h1>
           </div>
           <div className="home__contact">
             <h1 className="subtitle">Contact Us</h1>
