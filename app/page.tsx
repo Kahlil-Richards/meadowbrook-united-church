@@ -14,7 +14,7 @@ export default function Home() {
         </svg>
 
         <h1 className="title">Let's bring them home</h1>
-        <h1 className="description">To live out God’s purpose for salvation by reflecting the unconditional love of God through dynamic Christian worship, mutual care & support, active community engagement and proactive servant leadership, working towards peace and harmony in community”.</h1>
+        <h1 className="description">To live out God's purpose for salvation by reflecting the unconditional love of God through dynamic Christian worship, mutual care & support, active community engagement and proactive servant leadership, working towards peace and harmony in community”.</h1>
         <a className="button" data-name="color" data-value="blue">
           <h1 className="button__text"></h1>
         </a>
@@ -22,7 +22,6 @@ export default function Home() {
 
       <div className="home__events">
         <div className="home__event-wrapper">
-// JavaScript to check database and return info as tag (like react components)
         </div>
       </div>
 
@@ -31,8 +30,9 @@ export default function Home() {
           <h1 className="title">Livestream</h1>
           <Image className="home__main-img" alt="About Church image" src={live_thumbnail} />
           <div className="home__main-info">
-            <h1 className="subtitle">“Build your relationship
-              with Christ”</h1>
+            <h1 className="subtitle">
+              Build your relationship with Christ
+            </h1>
             <div className="home__countdown-group">
               <div className="home__countdown">5 34 5 3</div>
               <div className="home__countdown-text">Days Hours Mins Seconds</div>
