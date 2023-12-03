@@ -14,7 +14,7 @@ export default function Home() {
         </svg>
 
         <h1 className="title">Lets bring them home</h1>
-        <h1 className="description">To live out God's purpose for salvation by reflecting the unconditional love of God through dynamic Christian worship, mutual care & support, active community engagement and proactive servant leadership, working towards peace and harmony in community.</h1>
+        <h1 className="description">To live out Gods purpose for salvation by reflecting the unconditional love of God through dynamic Christian worship, mutual care & support, active community engagement and proactive servant leadership, working towards peace and harmony in community.</h1>
         <a className="button" data-name="color" data-value="blue">
           <h1 className="button__text"></h1>
         </a>
