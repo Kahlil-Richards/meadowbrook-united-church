@@ -9,7 +9,7 @@ import wood from '../../public/img/wood.jpeg'
 
 export default function About() {
     return (
-        <main className="main">
+        <main className="container">
             <div className="section about__header">
 
                 <h1 className="title">About</h1>
@@ -17,7 +17,7 @@ export default function About() {
                 <h1 className="subtitle">Meadowbrook united
                     church</h1>
             </div>
-            <div className="section">
+            <div className="">
                 <h1 className="description">
                     Meadowbrook UNITED Church (MUC) is a congregation of the United Church in Jamaica and the Cayman Islands (UCJCI).  The United Church was formed in 1965 by bringing the Presbyterian Church in Jamaica and the Congregational Union of Jamaica together.  The Disciples of Christ in Jamaica joined on 13 December 1992.  The UCJCI recognizes Jesus Christ as Lord and Head of the Church.  Within that context the church is organized in the following manner.
                 </h1>
@@ -33,9 +33,12 @@ export default function About() {
                         MUC is located in the heart of the Meadowbrook/Havendale community and share space, spirit and resources with the Meadowbrook Prep and High Schools, two main entities that are a part of our wholistic community engagement.
                     </h1>
                     <video className="about__video" controls>
-                        <source src='../../../public/video/about.mp4' type="video/mp4" />
+                        <source src='../../public/video/about.mp4' type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
+                    <h1 className="description">
+                        Rev. Lembe Tontela Sivile and Pastor Cynthia Sivile, members of our pastoral team.
+                    </h1>
                 </div>
             </div>
             <div className="section">

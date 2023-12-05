@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="container">
+        <div className="containerm">
           <header className="header">
             {/* <Image src={nav__img} alt='nav__bg' className='header__bg'></Image> */}
             <div className="header__logo-group">
