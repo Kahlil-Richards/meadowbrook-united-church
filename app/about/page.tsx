@@ -32,7 +32,7 @@ export default function About() {
                     <h1 className="description">
                         MUC is located in the heart of the Meadowbrook/Havendale community and share space, spirit and resources with the Meadowbrook Prep and High Schools, two main entities that are a part of our wholistic community engagement.
                     </h1>
-                    <VideoPlayer className='about__video' text={'../../public/video/about.mp4'} />
+                    {/* <VideoPlayer className='about__video' text={'../../public/video/about.mp4'} /> */}
                     <h1 className="description">
                         Rev. Lembe Tontela Sivile and Pastor Cynthia Sivile, members of our pastoral team.
                     </h1>
