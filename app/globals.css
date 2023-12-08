@@ -25,6 +25,9 @@
   margin: 0;
 }
 
+html {
+  height: 100vh;
+}
 
 body {
   margin: 0 0 var(--header-height) 0;
@@ -68,7 +71,7 @@ p {
 }
 
 .main {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .section {

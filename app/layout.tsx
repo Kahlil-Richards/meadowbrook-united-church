@@ -19,6 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta name="meadowbrook united church" content="meadowbrook united church website, that contaains information about the history of the church. I also give information to members pertaing the next church service, notices, calendar evens, etc."></meta>
+      <meta name="muc" content="Meadowbrook united church."></meta>
       <body className={inter.className}>
         <div className="containerm">
           <header className="header">
@@ -42,7 +44,9 @@ export default function RootLayout({
           {children}
         </div>
         <footer className="footer__bg">
-          <h1 className="footer__text">Copyright 2023. by Kahlil Richards</h1>
+          <Link href='mailto:kahlil.j.richards@gmail.com?subject=Feedback from Meadowbrook website&body=I Like your website. I would like to connect on further business'>
+            <h1 className="footer__text">Copyright 2024. by Kahlil Richards</h1>
+          </Link>
         </footer></body>
     </html>
   )

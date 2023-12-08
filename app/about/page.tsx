@@ -1,11 +1,12 @@
 import './about.css'
 import Image from 'next/image'
-import about from '../../public/img/about.png'
+import about from '../../public/img/about-img.jpg'
 import about__description from '../../public/img/about.png'
 import about2 from '../../public/img/about2.jpg'
 import webster from '../../public/img/webster.jpg'
 import council from '../../public/img/council.jpg'
 import wood from '../../public/img/wood.jpeg'
+import VideoPlayer from '../../components/VideoPlayer'
 
 export default function About() {
     return (
@@ -24,18 +25,14 @@ export default function About() {
                 <div className="about__description">
                     <Image src={about2} alt="About Church image" className="about__img-description" />
                     <h1 className="description">
-                        AREA COUNCIL : Each local congregation is a member of one of the 4 regional Councils in the United Church, which has oversight on the work and witness of the church within specified geographical boundaries.  Ministers operate under the discipline of the regional councils.
-                    </h1>
+                        AREA COUNCIL : Each local congregation is a member of one of the 4 regional Councils in the United Church, which has oversight on the work and witness of thechurch within specified geographical boundaries.  Ministers operate under the discipline of the regional councils.</h1>
                     <h1 className="description">
                         SYNOD AND MODERATOR : The Synod is the supreme legislative and administrative court of the church and meets once every two years.  The business of the Synod is presided over by a moderator who is elected by the Councils.  Synod administers its affairs through the Synod Administrative Centre, along with its standing committees.
                     </h1>
                     <h1 className="description">
                         MUC is located in the heart of the Meadowbrook/Havendale community and share space, spirit and resources with the Meadowbrook Prep and High Schools, two main entities that are a part of our wholistic community engagement.
                     </h1>
-                    <video className="about__video" controls>
-                        <source src='../../public/video/about.mp4' type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <VideoPlayer className='about__video' text={'../../public/video/about.mp4'} />
                     <h1 className="description">
                         Rev. Lembe Tontela Sivile and Pastor Cynthia Sivile, members of our pastoral team.
                     </h1>
