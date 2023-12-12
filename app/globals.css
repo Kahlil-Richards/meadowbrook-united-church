@@ -222,6 +222,12 @@ p {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+  
+  .header{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
 
   .header__text {
     display: none;
