@@ -218,19 +218,41 @@ p {
 
 /* Mobile */
 @media (max-width: 700px) {
+  :root {
+    --header-height: 0rem
+  }
+
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  
-  .header{
+
+  .header {
+    display: block;
     position: fixed;
     height: 100%;
     width: 100%;
+    text-align: center;
+    z-index: 100;
   }
 
   .header__text {
     display: none;
+  }
+
+  .header__logo-group {
+    position: relative;
+    top: var(--header-height);
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .nav__items {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

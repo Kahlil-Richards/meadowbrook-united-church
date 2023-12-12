@@ -1,9 +1,10 @@
-import pb from '../../components/PockekBase'
+import pb from '../../components/PockekBase'/
+import pocektbase from 'pocketbase'
 import './gallary.css'
 
 export default async function Home() {
 
-
+    // const pb = new PocketBase('http://127.0.0.1:8090' as string)
     const record = await pb.collection('gallary').getOne('RECORD_ID', {
         expand: 'relField1,relField2.subRelField',
     });
