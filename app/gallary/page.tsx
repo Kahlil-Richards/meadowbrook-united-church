@@ -1,18 +1,19 @@
-import PocketBase from 'pocketbase'
+import { client } from '../../components/PocketBase'
 import './gallary.css'
 
 export default async function Home() {
 
-    const pb = new PocketBase('http://127.0.0.1:8090' as string)
-    const records = await pb.collection('gallary').getFullList({
-        sort: '-created',
-    });
+    // const gallary = await client.collection('gallary').getOne('RECORD_ID', {
+    //     expand: 'relField1,relField2.subRelField',
+    // });
+
+    // console.log(gallary)
 
     return (
         <main className="section">
             <h1 className="title">Gallary</h1>
             <h1 className="subtitle">Whats New</h1>
-            <div className="gallary__img-group">
+            <div className="gallary__img-group">{ }
 
 
             </div>
