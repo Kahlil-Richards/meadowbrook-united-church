@@ -7,7 +7,7 @@ import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className=''>
+    <main className='container'>
       <div className="home__welcome">
         <Image className='home__bg-img' src={bg__img} alt='bg image'></Image>
 
