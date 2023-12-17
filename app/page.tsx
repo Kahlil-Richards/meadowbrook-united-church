@@ -4,12 +4,25 @@ import bg__img from '../public/img/home__bg.webp'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
+import Script from 'next/script'
+
+
+
+
+
+
+
 
 export default function Home() {
+
+
+
+
   return (
     <main className='container'>
+      <Script src='../components/app'></Script>
       <div className="home__welcome">
-        <Image className='home__bg-img' src={bg__img} alt='bg image'></Image>
+        {/* <Image className='home__bg-img' src={bg__img} alt='bg image'></Image> */}
 
         <svg className='home__logo' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 57">
           <path d="M8.66667 57H52V51.3H8.70133C7.36667 51.2658 5.77778 50.7442 5.77778 48.45C5.77778 46.1558 7.36667 45.6342 8.70133 45.6H52V5.7C52 4.18827 51.3913 2.73845 50.3077 1.66949C49.2242 0.600534 47.7546 0 46.2222 0H8.66667C5.18267 0 0 2.27715 0 8.55V48.45C0 54.7228 5.18267 57 8.66667 57ZM14.4444 14.25H23.1111V8.55H28.8889V14.25H37.5556V19.95H28.8889V37.05H23.1111V19.95H14.4444V14.25Z" fill="black" />
@@ -37,9 +50,96 @@ export default function Home() {
               Build your relationship with Christ
             </h1>
             <div className="home__countdown-group">
-              <div className="home__countdown">5 34 5 3</div>
-              <div className="home__countdown-text">Days Hours Mins Seconds</div>
+              <div className="home__countdown-text">Sunday, March 6, 2022 starts in:</div>
+
+
+
+
+
+
+              <div className="countdown">
+                <div className="time-section" id="hours">
+                  <div className="time-group">
+                    <div className="time-segment">
+                      <div className="segment-display">
+                        <div className="segment-display__top"></div>
+                        <div className="segment-display__bottom"></div>
+                        <div className="segment-overlay">
+                          <div className="segment-overlay__top"></div>
+                          <div className="segment-overlay__bottom">       </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="time-segment">
+                      <div className="segment-display">
+                        <div className="segment-display__top"></div>
+                        <div className="segment-display__bottom"></div>
+                        <div className="segment-overlay">
+                          <div className="segment-overlay__top"></div>
+                          <div className="segment-overlay__bottom"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Hours</p>
+                </div>
+
+                <div className="time-section" id="minutes">
+                  <div className="time-group">
+                    <div className="time-segment">
+                      <div className="segment-display">
+                        <div className="segment-display__top"></div>
+                        <div className="segment-display__bottom"></div>
+                        <div className="segment-overlay">
+                          <div className="segment-overlay__top"></div>
+                          <div className="segment-overlay__bottom"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="time-segment">
+                      <div className="segment-display">
+                        <div className="segment-display__top"></div>
+                        <div className="segment-display__bottom"></div>
+                        <div className="segment-overlay">
+                          <div className="segment-overlay__top"></div>
+                          <div className="segment-overlay__bottom"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Minutes</p>
+                </div>
+
+                <div className="time-section" id="seconds">
+                  <div className="time-group">
+                    <div className="time-segment">
+                      <div className="segment-display">
+                        <div className="segment-display__top"></div>
+                        <div className="segment-display__bottom"></div>
+                        <div className="segment-overlay">
+                          <div className="segment-overlay__top"></div>
+                          <div className="segment-overlay__bottom"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="time-segment">
+                      <div className="segment-display">
+                        <div className="segment-display__top"></div>
+                        <div className="segment-display__bottom"></div>
+                        <div className="segment-overlay">
+                          <div className="segment-overlay__top"></div>
+                          <div className="segment-overlay__bottom"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Seconds</p>
+                </div>
+              </div>
+
             </div>
+
+
             <div className="buttons">
               <Link className="youtube" href="https://www.youtube.com/@meadowbrookunitedchurch82/live" target='_blank'>Youtube</Link>
               <Link className="youtube" href="https://www.youtube.com/@meadowbrookunitedchurch82/live" target='_blank'>Order of Service</Link>

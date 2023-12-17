@@ -184,7 +184,8 @@ p {
   display: block;
   text-align: center;
   position: relative;
-  color: white;
+  color: black;
+  padding: 2rem 0;
 }
 
 .home__bg-img {
@@ -199,14 +200,156 @@ p {
 .home__logo {
   width: 4rem;
   aspect-ratio: 1;
+  color: white;
+}
+
+.home__main-group {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+}
+
+.home__main-img {
+  width: 50%;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
   margin: auto;
-  fill: white;
+}
+
+.home__main-info {
+  margin: auto;
 }
 
 .home__info-group {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+
+.countdown {
+  margin: 100px auto;
+  width: 50%;
+  display: flex;
+  gap: 30px;
+  font-family: sans-serif;
+}
+
+.time-section {
+  text-align: center;
+  font-size: 30px;
+}
+
+.time-group {
+  display: flex;
+  gap: 10px;
+}
+
+.time-segment {
+  display: block;
+  font-size: 100px;
+  font-weight: 900;
+  width: 100px;
+}
+
+.segment-display {
+  position: relative;
+  height: 100%;
+}
+
+.segment-display__top,
+.segment-display__bottom {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.segment-display__top {
+  line-height: 1.5;
+  color: #eee;
+  background-color: #111;
+}
+
+.segment-display__bottom {
+  line-height: 0;
+  color: #fff;
+  background-color: #333;
+}
+
+.segment-overlay {
+  position: absolute;
+  top: 0;
+  perspective: 400px;
+  height: 100%;
+  width: 100px;
+}
+
+.segment-overlay__top,
+.segment-overlay__bottom {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
+
+.segment-overlay__top {
+  top: 0;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #111;
+  transform-origin: bottom;
+}
+
+.segment-overlay__bottom {
+  bottom: 0;
+  line-height: 0;
+  color: #eee;
+  background-color: #333;
+  border-top: 2px solid black;
+  transform-origin: top;
+}
+
+.segment-overlay.flip .segment-overlay__top {
+  animation: flip-top 0.8s linear;
+}
+
+.segment-overlay.flip .segment-overlay__bottom {
+  animation: flip-bottom 0.8s linear;
+}
+
+@keyframes flip-top {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  50%,
+  100% {
+    transform: rotateX(-90deg);
+  }
+}
+
+@keyframes flip-bottom {
+
+  0%,
+  50% {
+    transform: rotateX(90deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.home__info-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  border: 2px solid black;
 }
 
 .footer__bg {
@@ -270,6 +413,14 @@ p {
     z-index: 100;
   }
 
+  .home__main-group {
+    display: block;
+  }
+
+  .home__main-img {
+    width: 100%;
+  }
+
   .nav__items {
     display: flex;
     flex-direction: column;
@@ -302,6 +453,10 @@ p {
 
 }
 
+.home__info-group {
+  display: block;
+}
+
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
@@ -314,9 +469,17 @@ p {
     display: none;
   }
 
+  .home__main-group {
+    display: block;
+  }
 
+  .home__main-img {
+    width: 80%;
+  }
 
   .nav__items {
     gap: 1.3rem;
   }
+
+
 }
