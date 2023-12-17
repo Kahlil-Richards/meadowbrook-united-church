@@ -4,23 +4,14 @@ import bg__img from '../public/img/home__bg.webp'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
-import Script from 'next/script'
-
-
-
-
-
-
+import CountDown from '../components/CountDown'
 
 
 export default function Home() {
 
 
-
-
   return (
     <main className='container'>
-      <Script src='../components/app'></Script>
       <div className="home__welcome">
         {/* <Image className='home__bg-img' src={bg__img} alt='bg image'></Image> */}
 
@@ -51,92 +42,7 @@ export default function Home() {
             </h1>
             <div className="home__countdown-group">
               <div className="home__countdown-text">Sunday, March 6, 2022 starts in:</div>
-
-
-
-
-
-
-              <div className="countdown">
-                <div className="time-section" id="hours">
-                  <div className="time-group">
-                    <div className="time-segment">
-                      <div className="segment-display">
-                        <div className="segment-display__top"></div>
-                        <div className="segment-display__bottom"></div>
-                        <div className="segment-overlay">
-                          <div className="segment-overlay__top"></div>
-                          <div className="segment-overlay__bottom">       </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="time-segment">
-                      <div className="segment-display">
-                        <div className="segment-display__top"></div>
-                        <div className="segment-display__bottom"></div>
-                        <div className="segment-overlay">
-                          <div className="segment-overlay__top"></div>
-                          <div className="segment-overlay__bottom"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p>Hours</p>
-                </div>
-
-                <div className="time-section" id="minutes">
-                  <div className="time-group">
-                    <div className="time-segment">
-                      <div className="segment-display">
-                        <div className="segment-display__top"></div>
-                        <div className="segment-display__bottom"></div>
-                        <div className="segment-overlay">
-                          <div className="segment-overlay__top"></div>
-                          <div className="segment-overlay__bottom"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="time-segment">
-                      <div className="segment-display">
-                        <div className="segment-display__top"></div>
-                        <div className="segment-display__bottom"></div>
-                        <div className="segment-overlay">
-                          <div className="segment-overlay__top"></div>
-                          <div className="segment-overlay__bottom"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p>Minutes</p>
-                </div>
-
-                <div className="time-section" id="seconds">
-                  <div className="time-group">
-                    <div className="time-segment">
-                      <div className="segment-display">
-                        <div className="segment-display__top"></div>
-                        <div className="segment-display__bottom"></div>
-                        <div className="segment-overlay">
-                          <div className="segment-overlay__top"></div>
-                          <div className="segment-overlay__bottom"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="time-segment">
-                      <div className="segment-display">
-                        <div className="segment-display__top"></div>
-                        <div className="segment-display__bottom"></div>
-                        <div className="segment-overlay">
-                          <div className="segment-overlay__top"></div>
-                          <div className="segment-overlay__bottom"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p>Seconds</p>
-                </div>
-              </div>
-
+              <CountDown></CountDown>
             </div>
 
 
