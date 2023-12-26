@@ -70,6 +70,17 @@ p {
   margin-bottom: 2rem;
 }
 
+button {
+  --button-color: blue;
+  background: var(--button-color);
+  padding: .9rem 1.19rem;
+  border-radius: 1rem;
+}
+
+.button__text {
+  font-size: var(--h1-font-size);
+}
+
 .main {
   /* margin-top: 3rem; */
 }
@@ -461,12 +472,16 @@ p {
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .container {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
   }
 
   .header__text {
     display: none;
+  }
+
+  .home__bg-img {
+    position: relative;
   }
 
   .home__main-group {

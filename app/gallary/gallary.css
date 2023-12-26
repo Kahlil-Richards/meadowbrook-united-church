@@ -1,1 +1,27 @@
-@import '../globals.css';/*# sourceMappingURL=gallary.css.map */
+@import '../globals.css';
+.gallary__img {
+  width: 100%;
+}
+.gallary__img-group {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 1rem;
+}
+.gallary__img-container {
+  width: 3rem;
+  height: 4rem;
+}
+
+@media (max-width: 700px) {
+  .gallary__img-group {
+    grid-template-columns: 1fr;
+  }
+}
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .gallary__img-group {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}/*# sourceMappingURL=gallary.css.map */
